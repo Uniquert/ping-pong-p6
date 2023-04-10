@@ -1,0 +1,89 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ping Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Varela+Round&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <center>
+        <div class="btn btn-primary heading">AI-PING-PONG
+            <button class="btn btn-info " data-toggle="modal" data-target="#myModal">Instruction</button>
+        </div>
+
+        <br>
+        <br>
+
+        <button onclick="startGame()" class="btn btn-success" id="gamestart">Start Game</button>
+
+        <br>
+
+        <h3 id="status" class="btn btn-warning"></h3>
+
+        <br>
+        <br>
+
+        <div id="canvas">
+            
+        </div>
+
+        <button onclick="restart()" class="btn btn-danger" id="restart">Restart</button>
+
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="fontb">Instructions</h4>
+
+                    </div>
+                    <div class="modal-body">
+                        <ol class="font">
+                            <li>There are two sides to the Pong game, an orange, and a red side, you are the red side, since you are the Player.</li>
+                            <br>
+
+                            <li>Using your mouse or touchpad, you can move the red paddle up or down.</li>
+                            <br>
+
+                            <li>The goal of the game is to keep hitting the ball, by moving your paddle up and down against the computer.</li>
+                            <br>
+
+                            <li>Each time you return the ball against the computer, the ball speed increases, making the game more challenging.</li>
+                            <br>
+
+                            <li>If you lose the game, a prompt will tell you to reload the game and give you another chance at playing.</li>
+                            <br>
+
+                            <li>Most Importantly, don't give up right away and have fun!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </center>
+
+    <div class="copy_right_footer">
+        Designed By: Geoffrey Owoeye, Created By: Prashant Shukla
+      </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

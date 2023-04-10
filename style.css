@@ -1,0 +1,71 @@
+body
+{
+    background:url("bluedigital.jpeg");
+    background-size: cover;
+    text-align: center;
+}
+
+.heading {
+    font-size:23px;
+    width:100%;
+    margin:0px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.heading button {
+    float:right;
+    border: 1px solid white;
+}
+
+#gamestart {
+    font-size:20px;
+    margin:0px;
+    font-family: 'Patrick Hand', cursive;
+    border-color: darkgreen;  
+}
+
+.status {
+    font-size:22px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.modal-dialog {
+    width:90%;
+}
+
+#restart {
+    font-size:22px;
+    font-family: 'Patrick Hand', cursive;
+    margin:10px;
+}
+
+
+.font {
+    font-family: 'Varela Round', sans-serif;
+    font-size:15px;
+}
+
+.fontb {
+    font-family: 'Patrick Hand', cursive;
+    font-size:25px;
+    font-weight:bolder;
+}
+
+.copy_right_footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color:lightgreen;
+    color:black;
+    text-align: center;
+    line-height:3;
+    font-family: 'Varela Round', sans-serif;
+    font-size:15px;
+    font-weight:bolder;
+}
+
+canvas {
+    border:2px solid white;
+    border-radius:10px;
+    box-shadow: 5px 5px 5px white;
+}
